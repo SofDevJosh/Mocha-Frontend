@@ -1,0 +1,28 @@
+#playScreen{
+    background-color: #a78d78;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: center;
+    color: #291c0e;
+}
+
+#goButton {
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}
+
+#powerupButton {
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}

@@ -3,6 +3,7 @@ import "../styles/footer.css";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import SocialLinks from "./footer-comps/social-links";
 
 
 export default function Footer () {
@@ -44,7 +45,7 @@ export default function Footer () {
                 <Row >
                     <Col md={5}></Col>
                     <Col md={6}>
-                        <h2>social links</h2>
+                        <SocialLinks/>
                     </Col>
                     <Col></Col>
                     

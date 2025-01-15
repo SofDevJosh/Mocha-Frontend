@@ -3,18 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
-const logo = "../media/coffee-logo/coffee-logo.jfif";
+import "../styles/navbar-styles/navbar-styles.css";
+import { Image } from 'react-bootstrap';
+import logo from "../media/coffee-logo/coffee-logo.jpg";
 export default function Navigation() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Navbar expand="lg"  id="navigation">
+      <Container >
         
         
         
         <Navbar.Brand href="/">
-        <img
-        
+        <Image
+        rounded
         src={logo}
         width="30"
         height= "30"
@@ -29,7 +30,7 @@ export default function Navigation() {
 
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
-
+            <Nav.Link href="/shop">Shop</Nav.Link>
             <NavDropdown title="Games" id="basic-nav-dropdown">
               <NavDropdown.Item href="/All-Games">All Games</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -37,7 +38,7 @@ export default function Navigation() {
               <NavDropdown.Item href="Math-Games">Math Games</NavDropdown.Item>
               
             </NavDropdown>
-
+            <Nav.Link href="/login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         

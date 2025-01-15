@@ -1,0 +1,29 @@
+#loginForm {
+    
+    background-color: #a78d78;
+    border-radius: 10%;
+    margin-top: 100px;
+    box-shadow: #a78d78 0 0 6px 1px;
+    display: flex;
+    flex-direction: column;
+
+    
+   
+    padding: 50px 30px 50px 30px;
+    color: #e1d4c2;
+    font-weight: 700;
+}
+
+#loginButton {
+    background-color: #6e473b;
+    border-color: #6e473b;
+    color: #beb5a9;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#loginTitle {
+    align-self: center;
+    font-weight: 900;
+    
+}
