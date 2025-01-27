@@ -17,7 +17,7 @@ import Shop from './pages/Shop';
 function App() {
   return (
     <div className="App">
-    <Navigation/>
+      <Navigation/>
       <Router>
             <Routes>
             <Route path = "/" Component={Home} />
@@ -32,7 +32,8 @@ function App() {
 
             </Routes>
       </Router>
-     <Footer />
+      <Footer/>
+     
     </div>
   );
 }

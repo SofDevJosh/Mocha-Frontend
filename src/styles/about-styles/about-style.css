@@ -1,0 +1,18 @@
+#AboutTitle {
+    font-weight: 700;
+}
+
+#AboutContainer {
+    margin-top: 50px;
+}
+
+#imageContainer{
+    
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+
+    border: 2px #291c0e solid;
+    border-radius: 10px;
+}

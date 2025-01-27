@@ -1,0 +1,10 @@
+#AnagramPlayButton {
+    border: none;
+    border-radius: 8px;
+    margin-top: -100px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}

@@ -1,0 +1,33 @@
+#BuyButton {
+    background-color: #6e473b;
+    border-color: #6e473b;
+    color: #beb5a9;
+    font-weight: 700;
+    
+}
+#BuyButton:hover{
+    background-color: #634035;
+    transform: scale(0.98);
+    transition: 0.1s ease-in;
+}
+
+#ShopCardContainer {
+    background-color: #a78d78;
+    border:#6e473b solid 1px;
+    border-radius: 6px;
+    box-shadow:#6e473b 10px 10px;
+    margin: 15px;
+}
+
+#price {
+    font-weight: 700;
+    color: yellow;
+}
+#ItemName {
+    font-weight: 800;
+    Color: #231c0e;
+}
+#ItemDes {
+    font-weight: 600;
+    Color: #634035;
+}

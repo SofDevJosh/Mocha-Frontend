@@ -4,35 +4,40 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { Container } from "react-bootstrap";
 import coffee from "../../media/updated-characters/coffee-cup-character-one.jpg"    
+import caramel from '../../media/barista-woman/caramel-macchiato.jfif'
+import icedOne from '../../media/barista-woman/iced-coffee.jfif'
+import pastry from '../../media/barista-woman/pastry.jfif'
+import icedFour from '../../media/barista-woman/iced-coffee-four.jfif'
+import brew from '../../media/barista-woman/macciato-two.jfif'
 
 export default function ItemList() {
     return(
         <Container>
-            <h1>SHOP</h1>
+            <h1 id="ShopTitle">SHOP</h1>
             <Row>
                 <Col>
                     <NewItem
                     image={coffee}
                     name="Expresso"
                     summary="Gives you an extra 10 seconds."
-                    price="100pts"
+                    price="10pts"
                     
                     />
                 </Col>
                 <Col>
                     <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
+                    image={caramel}
+                    name="Caramel Delight"
+                    summary="Gain 5 extra points at the end of the round."
+                    price="50pts"
                     
                     />
                 </Col>
                 <Col>
                     <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
+                    image={icedOne}
+                    name="Tofu Deluxe"
+                    summary="Ew, but gives you 10 points at the end of the round."
                     price="100pts"
                     
                     />
@@ -42,68 +47,36 @@ export default function ItemList() {
             <Row>
                 <Col>
                     <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
+                    image={pastry}
+                    name="Crousant"
+                    summary="So yummy! So buttery!! Point multiplier: 2x"
+                    price="500pts"
                     
                     />
                 </Col>
                 <Col>
 
                 <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
+                    image={brew}
+                    name="Lux De Caru"
+                    summary="It's so good! So yummy! Caramel in your tummy! Multiplier: 4x"
+                    price="1500pts"
                     
                     />
                 
                 </Col>
                 <Col>
                 <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
+                    image={icedFour}
+                    name="Choco Latto"
+                    summary="It's flavor and perks are a mystrey. Try it with a cherry on top!"
+                    price="50pts"
                     
                     />
                 
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                
-                <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
-                    
-                    />
-                
-                </Col>
-                <Col>
-                
-                <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
-                    
-                    />
-                </Col>
-                <Col>
-                
-                <NewItem
-                    image={coffee}
-                    name="Expresso"
-                    summary="Gives you an extra 10 seconds."
-                    price="100pts"
-                    
-                    />
-                </Col>
-            </Row>
+          
             
         </Container>
     )

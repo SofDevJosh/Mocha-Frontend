@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import LoginForm from "../comps/user-comps/login-comps/login-forms";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import UserForm from "../comps/user-comps/new-login";
 
 
 export default function Login() {
@@ -13,7 +14,7 @@ export default function Login() {
         <Row>
         <Col ></Col>
         <Col>
-            <LoginForm/>
+            <UserForm/>
         </Col>
         <Col ></Col>
 

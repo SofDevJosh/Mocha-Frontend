@@ -4,14 +4,16 @@ import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import workerOne from "../media/updated-characters/person-to-add.jpg";
+import Image from 'react-bootstrap/Image';
+import './../styles/about-styles/about-style.css';
 
 
 export default function About () {
     return(
-        <Container>
+        <Container id="AboutContainer">
             <Row>
                 <Col>
-                <h1>About</h1>
+                <h1 id ="AboutTitle">About</h1>
                 
                 </Col>
             </Row>
@@ -23,9 +25,10 @@ export default function About () {
                     <p>asf sdj fjh sdfh kjh </p>
                 </Col>
                 <Col></Col>
-                <Col>
-                <img
+                <Col id="imageContainer">
+                <Image 
                 src = {workerOne}
+                rounded
                 />
                 
                 </Col>

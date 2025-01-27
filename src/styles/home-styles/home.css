@@ -1,0 +1,17 @@
+#homeContainer {
+    height: 100vh;
+    width: 100%;
+
+
+    margin: 0 0 100px 0;
+   padding: 100px;
+
+}
+
+#homeTitle {
+
+}
+
+#mocha{
+    font-weight:800;
+}

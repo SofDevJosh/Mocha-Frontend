@@ -1,0 +1,29 @@
+#reviewsContainer {
+    border: 1px #291C0E solid;
+    border-radius: 6px;
+    padding: 100px;
+    background-color: #beb5a9;
+    box-shadow: #291C0E 7px 7px;
+    margin: 30px 15px 75px 15px;
+    
+    
+}
+
+.CustomerNames {
+    color:#291C0E;
+
+}
+
+.CustomerComments {
+    color:#291C0E;
+}
+
+.items {
+    background-color: #291c0e07;
+    border-radius: 3px;
+    padding: 0 30px 0 30px;
+}
+.images {
+    width: 200px;
+    height: 200px;
+}

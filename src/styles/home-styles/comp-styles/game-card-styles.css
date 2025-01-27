@@ -1,0 +1,43 @@
+#GameCardButton {
+    background-color: #6e473b;
+    
+    font-weight: 700;
+    border-radius: 6px;
+    border: none;
+    padding: 0;
+    
+    
+
+}
+#GameCardButtonTop{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    
+    transition: transform 0.1s ease;
+
+}
+
+#GameCardButton:hover #GameCardButtonTop{
+    transform: translateY(-0.33em);
+}
+
+#GameCardButton:active #GameCardButtonTop{
+    transform: translateY(-0.1em);
+    background-color: #ada69b;
+}
+
+#gameCardContainer {
+    background-color: #a78d78;
+    border:#6e473b solid 1px;
+    border-radius: 6px;
+    box-shadow:#6e473b 7px 7px;
+   
+}
+
+

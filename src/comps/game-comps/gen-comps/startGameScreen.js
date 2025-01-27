@@ -3,9 +3,10 @@ import { Button, Container } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
-
+import Timer from "../../logic/state-comp";
 
 export default function StartGameScreen({gameName, v1, v2, v3, v4, rules}) {
+    
     return(
         <Container>
            <Row>
@@ -23,9 +24,7 @@ export default function StartGameScreen({gameName, v1, v2, v3, v4, rules}) {
            <Row>
             {rules}
            </Row>
-           <Row>
-            <Button>Play!</Button>
-           </Row>
+           
 
 
         </Container>
