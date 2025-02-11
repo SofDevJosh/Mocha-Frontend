@@ -1,0 +1,35 @@
+.healthContainer{
+    background-color: #6e473b;
+    width: 200px;
+    height: 70px;
+    border-radius: 6px;
+    border: 1px solid #6e473b;
+    box-shadow: #291c0e 2px 2px;
+    color: white;
+ 
+
+}
+
+
+.healthSection {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.healthBar {
+    width: 180px;
+    
+    border: black 1px solid;
+    padding: 1px;
+    background-color: white;
+    display: flex;
+}
+.healthBarFill {
+    background-color: green;
+    height: 2px;
+    width: 100%;
+    
+    z-index: 1;
+    
+}

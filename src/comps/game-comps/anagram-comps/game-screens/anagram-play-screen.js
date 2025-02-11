@@ -4,6 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import picOne from "../../../../media/barista-woman/baristas-enjoying-coffee.jfif";
+import picTwo from "../../../../media/barista-woman/two-baristas-coffee-bag.jfif";
+import picThree from "../../../../media/barista-woman/two-baristas-looking-forward.jfif";
+
+import getRandomInt from '../../../../utils/randomint';
+
+
 import Play from '../../gen-comps/playGame';
 import Button from 'react-bootstrap/Button';
 import EndGame from '../../gen-comps/endGame';
@@ -31,19 +37,26 @@ export default function AnagramPlay({ gm }) {
     //timer
 
     let num = 30;
-    const timeRef = useRef(30);
+    let timeRef = useRef('');
+   
   
-    function countdown(obj, num) {
-
+    function countdown() {
+        setTimeout(() => {
+            if (num > 0) {
+                num--;
+                timeRef.current.innerHTML = num;
+                countdown();
+            } else {
+                fireEndScreen();
+            }
+        }, 1000);
+       
+       
     }
 
 
         //this function creatyes a random interval between the determined numbers 
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
+  
       //ALL THIS GENERATES A PROBLEM
       function newProblem(){
         //fit all the logic into this funtion
@@ -104,23 +117,31 @@ export default function AnagramPlay({ gm }) {
 
     const [endscreen, setEndScreen] = useState('');
     const [isVisible, setIsVisible] = useState('block'); 
-    function fireEndScreen(){
-        setEndScreen(<EndGame/>);
-        setIsVisible('none')
-       
-
+    
+    if(isVisible == 'block'){
+        countdown();
     }
 
     
 
    //this will be the points system
-    const points = useRef(0);
-
+    let points = useRef(0);
+    let currentPts = points.current.innerHTML;
     function addPoints(data){
         let currentPoints = Number(points.current.innerHTML)
         points.current.innerHTML = currentPoints + data
         
     }
+    function fireEndScreen(){
+        console.log(points.current.innerHTML);
+        setEndScreen(<EndGame pts={points.current.innerHTML}/>);
+        setIsVisible('none')
+       
+
+    }
+
+
+
 
     //this function will handle the enter key press
     function handleKeyPress(e){
@@ -129,10 +150,64 @@ export default function AnagramPlay({ gm }) {
         }
     }
 
+
+
+
     //this is our clear function
     function clear(){
         userRef.current.value = '';
     }
+
+
+
+    //function to change pictures
+    
+    let imageSource = useRef(picOne);
+    
+    function correctPic(){
+        imageSource.current.src = picTwo;
+        setTimeout(()=>{imageSource.current.src = picOne}, 2000);
+        
+      
+        
+    }
+
+
+
+    function incorrectPic(){
+        imageSource.current.src = picThree;
+        setTimeout(()=>{imageSource.current.src = picOne}, 2000);   
+       
+    }
+
+
+
+    //correct or incorrect h element
+    let answer = useRef('');
+
+    function correctAnswerMessage(){
+        answer.current.innerHTML = 'correct';
+        answer.current.style.color = 'green';   
+        setTimeout(()=>{answer.current.innerHTML = 'Guess an Anagram'
+            answer.current.style.color = '#291c0e';
+            }, 1000);
+    }
+    function incorrectAnswerMessage(){
+        answer.current.innerHTML = 'incorrect';
+        answer.current.style.color = 'red';
+        setTimeout(()=>{answer.current.innerHTML = 'Guess an Anagram'
+        answer.current.style.color = '#291c0e';
+        }, 1000);
+    }
+    function alreadyGuessedMessage(){
+        answer.current.innerHTML = 'you already guessed that';
+        answer.current.style.color = 'red';
+        setTimeout(()=>{answer.current.innerHTML = 'Guess an Anagram'
+        answer.current.style.color = '#291c0e';
+        }, 1000);
+    }
+
+
 
     //this tests our answer against anything in the word bank.
     function Test(){
@@ -141,17 +216,20 @@ export default function AnagramPlay({ gm }) {
         let found = Bank.find((wordInBank) => wordInBank == userAns);
         console.log(found);
         if (found == undefined) {
-            console.log(`That word ${userAns} was not correct`)
+            
+            incorrectPic();
+            incorrectAnswerMessage();
+
 
         } else if(guessAns.find((alreadyGuessed)=> alreadyGuessed == found)!= undefined){
-            console.log('you already guessed that silly.')
+            alreadyGuessedMessage();
         }
         else {
             guessAns.push(found);
             addPoints(10);
             clear();
-            console.log(guessAns);
-            console.log('correct!!')
+            correctPic();
+            correctAnswerMessage();
         }
         if (guessAns.length == Bank.length){
             fireEndScreen();
@@ -176,31 +254,40 @@ export default function AnagramPlay({ gm }) {
                 <Image
                 rounded
                 src={picOne}
-                
+                width={300}
+                height={250}
+                ref={imageSource}
                 />
+                <h5 id="answer" ref={answer}>Guess an Anagram</h5>
                 </Col>
             </Row>
             <Row>
-                {AnagramProblem}
+                <h3 id="problem">{AnagramProblem}</h3>
             </Row>
             <Row>
                 
                 {/*custom input for gamemode */}
-                <input type="text" defaultValue={''} ref={userRef} onKeyDown={handleKeyPress}></input>
+                <input id="GameInput" type="text" defaultValue={''} ref={userRef} onKeyDown={handleKeyPress}></input>
                 <Button id="goButton" onClick={Test}>
                     <span id="goButtonTop">GO</span>
                 </Button>
             </Row>
             <Row>
                 <Col>
-                <h3 ref={timeRef} ></h3>
+                <h3 ref={timeRef} >30</h3>
                 </Col>
                 <Col>
-                    <Button id="powerupButton">USE POWERUP</Button>
+                    <Button id="powerupButton">
+                        <span id="powerupButtonTop">USE POWERUP</span>
+                    </Button>
                 </Col>
                 <Col>
                     <h4><span ref={points}>0</span>pts</h4>
                 </Col>
+            </Row>
+
+            <Row>
+                {guessAns}
             </Row>
 
 
@@ -210,13 +297,8 @@ export default function AnagramPlay({ gm }) {
 
 
 
-
-
            </Container>
-           <Container>
-                <h4>Words</h4>
-                
-           </Container>
+           
         </Container>
                 
            

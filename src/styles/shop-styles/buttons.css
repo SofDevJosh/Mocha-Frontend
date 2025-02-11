@@ -1,22 +1,41 @@
 #BuyButton {
     background-color: #6e473b;
-    border-color: #6e473b;
-    color: #beb5a9;
+    border: none;
+    border-radius: 6px;
     font-weight: 700;
+    padding: 0px;
     
 }
-#BuyButton:hover{
-    background-color: #634035;
-    transform: scale(0.98);
-    transition: 0.1s ease-in;
+
+#BuyButtonTop {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    
+    transition: transform 0.1s ease;
+
+}
+#BuyButton:hover #BuyButtonTop {
+    transform: translateY(-0.33em);
+}
+#BuyButton:active #BuyButtonTop {
+    transform: translateY(-0.1em);
+    background-color: #ada69b;
 }
 
 #ShopCardContainer {
     background-color: #a78d78;
     border:#6e473b solid 1px;
     border-radius: 6px;
-    box-shadow:#6e473b 10px 10px;
+    box-shadow:#6e473b 7px 7px;
     margin: 15px;
+
+    
 }
 
 #price {

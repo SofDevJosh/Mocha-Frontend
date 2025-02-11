@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 import '../../styles/home-styles/comp-styles/game-card-styles.css'
 
-export default function GameCards({gameTitle, gameImage, gameDescribe}) {
+export default function GameCards({gameTitle, gameImage, gameDescribe,page}) {
   return (
     <Card style={{ width: '18rem' }} id="gameCardContainer">
       <Card.Img variant="top" src={gameImage} width="100" height="220" />
@@ -13,12 +13,13 @@ export default function GameCards({gameTitle, gameImage, gameDescribe}) {
         <Card.Text>
           {gameDescribe}
         </Card.Text>
-        <button  id="GameCardButton">
-          <span id="GameCardButtonTop">
-          PLAY
-          </span>
-          
-        </button>
+        <a href={page}>
+          <Button  id="GameCardButton">
+            <span id="GameCardButtonTop">
+            PLAY
+            </span>
+          </Button>
+        </a>
       </Card.Body>
     </Card>
   );

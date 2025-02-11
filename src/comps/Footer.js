@@ -4,18 +4,20 @@ import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import SocialLinks from "./footer-comps/social-links";
-
+import Logo from "../media/coffee-logo/coffee-logo.jpg"
+import Image from "react-bootstrap/Image";
 
 export default function Footer () {
     return(
         <Container id="footer" fluid>
             <Row>
                 <Col>
-                    <img
-                    src="../media/coffee-logo/coffee-logo.jpg"
+                    <Image
+                    src={Logo}
                     alt="logo"
                     width = {150}
                     height = {150}
+                    
                     className="logoImage text-center"
                     />
                 </Col>

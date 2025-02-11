@@ -12,9 +12,15 @@ import Footer from './comps/Footer';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Shop from './pages/Shop';
-
+import ObrienOpenChat from './comps/obrien/obrien-open-chat';
+import { useState } from 'react';
+import ObrienChat from './comps/obrien/obrien-chat';
+import { Button } from 'react-bootstrap';
 
 function App() {
+  const [chatBubble, setChatBubble] = useState('block');
+  const [chatScreen, setChatScreen] = useState('none');
+ 
   return (
     <div className="App">
       <Navigation/>
@@ -32,6 +38,9 @@ function App() {
 
             </Routes>
       </Router>
+     
+      <ObrienOpenChat/>
+      
       <Footer/>
      
     </div>

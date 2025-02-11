@@ -1,0 +1,97 @@
+#card {
+    width: 260px;
+    background-color: #beb5a9;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(110,71,59,0.5);
+    position:absolute;
+  }
+  #obrien-title{
+    font-weight: 800;
+    
+  }
+  #chat-header {
+    background-color: #291c0e;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #exit-btn{
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-size: larger;
+
+
+  }
+
+  
+
+  #exit-btn:hover{
+    transform: scale(1.2);
+    transition: all 100ms;
+    color:#ccc6c6;
+  }
+ 
+  
+  #chat-window {
+    height: 220px;
+    overflow-y: scroll;
+    
+
+  }
+  
+  #message-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .message{
+    font-weight: 500;
+    background-color: #6e473b;
+    border-radius: 6px 10px 8px 1px;
+    margin: 10px;
+    color: white;
+    padding:3px;
+    border: 1px solid #291c0e;
+
+  }
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #291c0e;
+    
+  }
+  
+  .message-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 6px 0px 0px 6px;
+    
+  }
+  
+  .send-button {
+    border: none;
+    outline: none;
+    background-color: #291c0e;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 0px 6px 6px 0px;
+    font-weight: 600;
+  }
+  
+  .send-button:hover {
+    background-color: #a78d78;
+    color: rgb(0, 0, 0);
+   
+  }

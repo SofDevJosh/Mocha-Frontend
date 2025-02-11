@@ -16,7 +16,9 @@ export default function NewItem({image, name, summary, price}){
             </Card.Text>
             <Row>
                 <Card.Text id="price">{price}</Card.Text>
-                <Button id="BuyButton">BUY</Button>
+                <Button id="BuyButton">
+                 <span id="BuyButtonTop">BUY</span>
+                </Button>
                 
             </Row>
            

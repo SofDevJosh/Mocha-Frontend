@@ -1,18 +1,40 @@
 #AboutTitle {
     font-weight: 700;
+
 }
 
 #AboutContainer {
     margin-top: 50px;
+    height: 100vh;
 }
 
 #imageContainer{
-    
-    display: flex;
-    align-items: center;
-
-    padding: 50px;
-
-    border: 2px #291c0e solid;
-    border-radius: 10px;
+    box-shadow: black 20px -20px;
+    transform: translate(10px, 10px);
+    border:0.5px solid #6e473b;
+    width: 300px;
+    height: 300px;
+   transition: all 0.5s ease-in-out;
 }
+
+#imageContainer:hover{
+    box-shadow: black 30px -30px;
+    transform: translate(20px, 20px);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+#imageContainer:active{
+    box-shadow: black 5px -5px;
+    transform: translate(0px, 0px);
+    transition: all 0.4s ease-in-out;
+}
+
+.accordion-button {
+    background-color: #6e473b;
+    color: white;
+    font-weight: 700;
+}
+.accordion-button:active{
+    background-color: #a78d78;
+}
+

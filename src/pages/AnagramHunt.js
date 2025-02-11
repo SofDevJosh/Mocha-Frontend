@@ -47,10 +47,12 @@ export default function AnagramHunt () {
     const [startButton, setStartButton] = useState(
     <Button id="AnagramPlayButton" onClick={function(){
         init(dataSend)
-        }} >PLAY
+        }} >
+            <span id="AnagramPlayButtonTop">PLAY</span>
     </Button>)
 
     return(
+        <Container id="AnagramHunt">
         <Container>
             
             <Row>
@@ -72,6 +74,7 @@ export default function AnagramHunt () {
                 <Col></Col>
             </Row>
            
+        </Container>
         </Container>
     )
 }

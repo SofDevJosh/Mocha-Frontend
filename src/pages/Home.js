@@ -32,14 +32,16 @@ export default function Home () {
                         gameTitle = "Anagram Hunt"
                         gameImage ={anaImage}
                         gameDescribe = "Your on the hunt for coffee.. or words. Find new combos to earn points!"
+                        page="/Anagram-Hunt"
                     />
                 
                 </Col>
                 <Col>
                     <GameCards
-                        gameTitle = "Math Run"
+                        gameTitle = "Math Wars"
                         gameImage = {mathImage}
                         gameDescribe="Turns out coffee isn't free! Punch the numbers at check out to earn points!"
+                        page="/Math-Games"
                     />
                 </Col>
                 <Col></Col>

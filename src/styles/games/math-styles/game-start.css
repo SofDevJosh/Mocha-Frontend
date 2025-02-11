@@ -1,4 +1,4 @@
-#AnagramStartContainer {
+#MathGameStart{
     background-color: #a78d78;
     border-radius: 6px;
     box-shadow:#6e473b 7px 7px;
@@ -9,9 +9,4 @@
     align-items: center;
     color: #291c0e;
     padding-bottom: 100px;
-    
-}
-
-#AnagramHunt {
-    height: 100vh;
 }

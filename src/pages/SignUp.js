@@ -7,12 +7,13 @@ import { Container } from "react-bootstrap";
 export default function SignUp (){
     return(
     <Container>
-        <Row></Row>
+        
         <Row>
-
+            <Col></Col>
             <Col>
                 <SignUpForm/>
             </Col>
+            <Col></Col>
 
             
         </Row>

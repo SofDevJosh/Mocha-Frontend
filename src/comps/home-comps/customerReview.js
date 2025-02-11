@@ -7,7 +7,7 @@ import customerTwo from "../../media/updated-characters/satisfied-customer-two.j
 import Image from "react-bootstrap/Image";
 export default function CustomerReview() {
     return(
-        <Carousel fade id="reviewsContainer" noControls >
+        <Carousel fade id="reviewsContainer" controls={false} >
             <Carousel.Item interval={3000} className="items">
               <Image src={customer} className="images"/>
               <Carousel.Caption>

@@ -28,7 +28,7 @@ export default function ItemList() {
                     <NewItem
                     image={caramel}
                     name="Caramel Delight"
-                    summary="Gain 5 extra points at the end of the round."
+                    summary="Gain 5 extra points."
                     price="50pts"
                     
                     />
@@ -37,7 +37,7 @@ export default function ItemList() {
                     <NewItem
                     image={icedOne}
                     name="Tofu Deluxe"
-                    summary="Ew, but gives you 10 points at the end of the round."
+                    summary="Ew, but gives you 10 points."
                     price="100pts"
                     
                     />
@@ -49,7 +49,7 @@ export default function ItemList() {
                     <NewItem
                     image={pastry}
                     name="Crousant"
-                    summary="So yummy! So buttery!! Point multiplier: 2x"
+                    summary="Multiplier: 2x"
                     price="500pts"
                     
                     />
@@ -59,7 +59,7 @@ export default function ItemList() {
                 <NewItem
                     image={brew}
                     name="Lux De Caru"
-                    summary="It's so good! So yummy! Caramel in your tummy! Multiplier: 4x"
+                    summary="Multiplier: 4x"
                     price="1500pts"
                     
                     />
@@ -69,7 +69,7 @@ export default function ItemList() {
                 <NewItem
                     image={icedFour}
                     name="Choco Latto"
-                    summary="It's flavor and perks are a mystrey. Try it with a cherry on top!"
+                    summary=" Try it with a cherry on top!"
                     price="50pts"
                     
                     />

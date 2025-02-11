@@ -1,0 +1,201 @@
+#MathPlayScreen{
+    background-color: #a78d78;
+    border-radius: 6px;
+    margin-top: 30px;
+
+}
+
+#fightButton{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}
+
+#fightButtonTop{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+#fightButton:hover #fightButtonTop{
+    transform: translateY(-0.33em);
+}
+
+#fightButton:active #fightButtonTop{
+    transform: translateY(-0.1em);
+    background-color: #ada69b;
+}
+
+#powerUpButton {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}
+#powerUpButtonTop{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+#powerUpButton:hover #powerUpButtonTop{
+    transform: translateY(-0.33em);
+    background-color: yellow;
+}
+#powerUpButton:active #powerUpButtonTop{
+    transform: translateY(-0.1em);
+    background-color: rgb(231, 231, 4);
+}
+
+#quitButton{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}
+#quitButtonTop{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+#quitButton:hover #quitButtonTop{
+    transform: translateY(-0.33em);
+}
+#quitButton:active #quitButtonTop{
+    transform: translateY(-0.1em);
+    background-color: #ada69b;
+}
+#skipButton{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}
+
+#skipButtonTop{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+#skipButton:hover #skipButtonTop{
+    transform: translateY(-0.33em);
+}
+#skipButton:active #skipButtonTop{
+    transform: translateY(-0.1em);
+    background-color: #ada69b;
+}
+
+#GameContainer{
+    border: 1px solid #6e473b;
+    border-radius: 6px;
+    width: 90%;
+    height: 500px;
+    background-color: white;
+}
+#GamePad{
+    margin: 40px;
+   
+}
+#circle{
+    background-color: #6e473b;
+    border: solid #291c0e 3px;
+    width: 200px;
+    height: 20px;
+    border-radius: 100%;
+    transform: translate(-45px, -12px);
+    
+}
+#enemyImage {
+    position: relative;
+    z-index:1;
+    box-shadow: #6e473b 2px 1px 3px;
+}
+#circlePlayer {
+    background-color: #6e473b;
+    border: solid #291c0e 3px;
+    width: 200px;
+    height: 20px;
+    border-radius: 100%;
+    transform: translate(-11px, -10px);
+}
+
+#playerImage{
+
+    position: relative;
+    z-index:1;
+    box-shadow: #6e473b 2px 1px 3px;
+
+}
+
+#retryBtn{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    color: #e1d4c2;
+    background-color: #6e473b;
+    font-weight: 700;
+}
+
+#retryBtnTop{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #6e473b;
+    border-radius: 6px;
+    padding: 0.5em 1.5em;
+    background-color: #beb5a9;
+    color: #6e473b ;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+#retryBtn:hover #retryBtnTop{
+    transform: translateY(-0.33em);
+}
+#retryBtn:active #retryBtnTop{
+    transform: translateY(-0.1em);
+    background-color: #ada69b;
+}
+
+

@@ -14,7 +14,7 @@ export default function Login() {
         <Row>
         <Col ></Col>
         <Col>
-            <UserForm/>
+            <LoginForm/>
         </Col>
         <Col ></Col>
 
